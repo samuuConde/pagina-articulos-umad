@@ -8,19 +8,22 @@
   <link rel="stylesheet" href="./CSS/normalize.css">
   <link rel="stylesheet" href="./CSS/DiegoCss.css">
   <link rel="stylesheet" href="./CSS/disenoangel.css">
-  
+  <link rel="stylesheet" href="./CSS/SamMenu.css">
 </head>
 
 <body>
   <header>
     <!-- Encabezado y navegación principal -->
     <nav class="navigation">
-      <a class="navigation__link" href="./index.html">Tienda UMAD</a>
-      <a class="navigation__link" href="./pages/Mujer.html">Mujer</a>
-      <a class="navigation__link" href="./pages/hombre.html">Hombre</a>
-      <a class="navigation__link" href="./pages/Productos.html">Productos</a>
-      <a class="navigation__link" href="./pages/Nosotros.html">Nosotros</a>
-      <a class="navigation__link" href="./pages/Contacto.html">Contacto</a>
+      <button id="header-menu" type="button">☰ Menú</button>
+      <div id="hiddenLinks" class="hidden">
+        <a class="navigation__link" href="./index.html">Tienda UMAD</a>
+        <a class="navigation__link" href="./pages/Mujer.html">Mujer</a>
+        <a class="navigation__link" href="./pages/hombre.html">Hombre</a>
+        <a class="navigation__link" href="./pages/Productos.html">Productos</a>
+        <a class="navigation__link" href="./pages/Nosotros.html">Nosotros</a>
+        <a class="navigation__link" href="./pages/Contacto.html">Contacto</a>
+      </div>
       <span class="buscador">
         <label for="buscar">Buscar</label>
         <input type="text" id="buscar" name="buscar">
@@ -28,7 +31,7 @@
       <a class="navigation__link" href="#Carrito">Carrito</a>
     </nav>
     <!--Este seria como un banner para la pagina-->
-    
+
   </header>
 
   <main>
@@ -57,7 +60,7 @@
         </div>
       </article>
       </a>
-      
+
       <a class="Clothes-Articles__Link" href="./pages/VerProducto.html">
       <article class="Clothes-Articles__Card">
         <img class="Clothes-Articles__image" src="./images/catalogo/short-umad-gris.jpeg" alt="Fotodelarticulo" width="500px">
@@ -84,7 +87,7 @@
       </div>
     </article>
     </a>
-    
+
 
     <!--Esto ira al lado de favorita-->
     <div class="todays-phrase">
@@ -101,6 +104,8 @@
       <p class="footer-navigation__text">Orgullo que se viste.</p>
     </nav>
   </footer>
+
+  <script src="./Javascript/buttonFunction.js"></script>
 </body>
 
 </html>

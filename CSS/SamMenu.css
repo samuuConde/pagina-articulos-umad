@@ -1,0 +1,31 @@
+#header-menu {
+  display: none;
+}
+
+#hiddenLinks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #header-menu {
+    display: block;
+    border: 2px solid black;
+  }
+
+  #hiddenLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hiddenLinks.hidden {
+    display: none;
+  }
+}
