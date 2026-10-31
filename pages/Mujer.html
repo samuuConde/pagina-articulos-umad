@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mujer | Proyecto Ropa UMAD</title>
   <link rel="stylesheet" href="../CSS/disenoangel.css">
+  <link rel="stylesheet" href="../CSS/SamMenu.css">
 </head>
 <body>
   <header>
     <nav class="catalogo-navegacion">
-      <a href="../index.html">Tienda UMAD</a>
-      <a href="./Mujer.html">Mujer</a>
-      <a href="./hombre.html">Hombre</a>
-      <a href="./Productos.html">Productos</a>
-      <a href="./Nosotros.html">Nosotros</a>
-      <a href="./Contacto.html">Contacto</a>
+      <button id="header-menu" type="button">☰ Menú</button>
+      <div id="hiddenLinks" class="hidden">
+        <a href="../index.html">Tienda UMAD</a>
+        <a href="./Mujer.html">Mujer</a>
+        <a href="./hombre.html">Hombre</a>
+        <a href="./Productos.html">Productos</a>
+        <a href="./Nosotros.html">Nosotros</a>
+        <a href="./Contacto.html">Contacto</a>
+      </div>
       <span class="buscador"><label for="buscar">Buscar</label> <input type="text" id="buscar" name="buscar"></span>
       <a href="./Productos.html">Carrito</a>
     </nav>
@@ -56,5 +60,6 @@
     </div>
   </main>
   <footer class="catalogo-pie"><a href="./Nosotros.html">Sobre nosotros</a><span>Política</span><span>Orgullo que se viste</span></footer>
+  <script src="../Javascript/buttonFunction.js"></script>
 </body>
 </html>

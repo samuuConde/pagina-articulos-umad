@@ -9,17 +9,21 @@
   <link rel="stylesheet" href="../CSS/DiegoCss.css">
   <link rel="stylesheet" href="../CSS/disenoangel.css">
   <link rel="stylesheet" href="../CSS/SamContacto.css">
+  <link rel="stylesheet" href="../CSS/SamMenu.css">
 </head>
 
 <body>
   <header>
     <nav class="navigation">
-      <a class="navigation__link" href="../index.html">Tienda UMAD</a>
-      <a class="navigation__link" href="./Mujer.html">Mujer</a>
-      <a class="navigation__link" href="./hombre.html">Hombre</a>
-      <a class="navigation__link" href="./Productos.html">Productos</a>
-      <a class="navigation__link" href="./Nosotros.html">Nosotros</a>
-      <a class="navigation__link" href="./Contacto.html">Contacto</a>
+      <button id="header-menu" type="button">☰ Menú</button>
+      <div id="hiddenLinks" class="hidden">
+        <a class="navigation__link" href="../index.html">Tienda UMAD</a>
+        <a class="navigation__link" href="./Mujer.html">Mujer</a>
+        <a class="navigation__link" href="./hombre.html">Hombre</a>
+        <a class="navigation__link" href="./Productos.html">Productos</a>
+        <a class="navigation__link" href="./Nosotros.html">Nosotros</a>
+        <a class="navigation__link" href="./Contacto.html">Contacto</a>
+      </div>
       <span class="buscador">
         <label for="buscar">Buscar</label>
         <input type="text" id="buscar" name="buscar">
@@ -75,6 +79,8 @@
       <a class="footer-navigation__link" href="./hombre.html">Hombre</a>
     </nav>
   </footer>
+
+  <script src="../Javascript/buttonFunction.js"></script>
 </body>
 
 </html>

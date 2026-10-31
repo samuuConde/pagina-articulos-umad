@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="../CSS/normalize.css">
   <link rel="stylesheet" href="../CSS/GaelCss.css">
+  <link rel="stylesheet" href="../CSS/SamMenu.css">
 </head>
 
 <body>
@@ -20,15 +21,18 @@
     <p class="encabezado__titulo">Proyecto Ropa UMAD</p>
 
     <nav class="navegacion">
-      <ul class="navegacion__lista">
-        <li class="navegacion__item"><a class="navegacion__enlace" href="../index.html">Inicio</a></li>
-        <li class="navegacion__item"><a class="navegacion__enlace" href="Productos.html">Productos</a></li>
-        <li class="navegacion__item"><a class="navegacion__enlace" href="hombre.html">Hombre</a></li>
-        <li class="navegacion__item"><a class="navegacion__enlace" href="Mujer.html">Mujer</a></li>
-        <li class="navegacion__item"><a class="navegacion__enlace" href="Contacto.html">Contacto</a></li>
-        <li class="navegacion__item"><a class="navegacion__enlace navegacion__enlace--activo"
-            href="Nosotros.html">Nosotros</a></li>
-      </ul>
+      <button id="header-menu" type="button">☰ Menú</button>
+      <div id="hiddenLinks" class="hidden">
+        <ul class="navegacion__lista">
+          <li class="navegacion__item"><a class="navegacion__enlace" href="../index.html">Inicio</a></li>
+          <li class="navegacion__item"><a class="navegacion__enlace" href="Productos.html">Productos</a></li>
+          <li class="navegacion__item"><a class="navegacion__enlace" href="hombre.html">Hombre</a></li>
+          <li class="navegacion__item"><a class="navegacion__enlace" href="Mujer.html">Mujer</a></li>
+          <li class="navegacion__item"><a class="navegacion__enlace" href="Contacto.html">Contacto</a></li>
+          <li class="navegacion__item"><a class="navegacion__enlace navegacion__enlace--activo"
+              href="Nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -182,6 +186,7 @@
     <p class="pie__copyright">&copy; 2026 Proyecto Ropa UMAD. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="../Javascript/buttonFunction.js"></script>
 </body>
 
 </html>
