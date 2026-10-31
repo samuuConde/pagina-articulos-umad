@@ -9,7 +9,9 @@
 }
 
 @media (max-width: 900px) {
-  .navigation {
+  .navigation,
+  .catalogo-navegacion,
+  .navegacion {
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -27,5 +29,16 @@
 
   #hiddenLinks.hidden {
     display: none;
+  }
+
+  .navegacion__lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buscador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
